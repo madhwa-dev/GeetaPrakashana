@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Book 1",
+    "thumbnail": "thumb_1.jpg",
+    "link": "https://example.com/book_1",
+    "author": "Srinivasa S. Mathada"
+  },
+  {
+    "title": "Book 2",
+    "thumbnail": "thumb_2.jpg",
+    "link": "https://example.com/book_2",
+    "author": "Srinivasa S. Mathada"
+  },
+  {
+    "title": "Book 3",
+    "thumbnail": "thumb_3.jpg",
+    "link": "https://example.com/book_3",
+    "author": "Srinivasa S. Mathada"
+  },
+  {
+    "title": "Book 4",
+    "thumbnail": "thumb_4.jpg",
+    "link": "https://example.com/book_4",
+    "author": "Srinivasa S. Mathada"
+  },
+  {
+    "title": "Book 5",
+    "thumbnail": "thumb_5.jpg",
+    "link": "https://example.com/book_5",
+    "author": "Srinivasa S. Mathada"
+  },
+  {
+    "title": "Book 6",
+    "thumbnail": "thumb_6.jpg",
+    "link": "https://example.com/book_6",
+    "author": "Anandatirtha S. Mathada"
+  },
+  {
+    "title": "Book 7",
+    "thumbnail": "thumb_7.jpg",
+    "link": "https://example.com/book_7",
+    "author": "Anandatirtha S. Mathada"
+  },
+  {
+    "title": "Book 8",
+    "thumbnail": "thumb_8.jpg",
+    "link": "https://example.com/book_8",
+    "author": "Anandatirtha S. Mathada"
+  },
+  {
+    "title": "Book 9",
+    "thumbnail": "thumb_9.jpg",
+    "link": "https://example.com/book_9",
+    "author": "Anandatirtha S. Mathada"
+  },
+  {
+    "title": "Book 10",
+    "thumbnail": "thumb_10.jpg",
+    "link": "https://example.com/book_10",
+    "author": "Anandatirtha S. Mathada"
+  }
+]
