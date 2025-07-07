@@ -1,1 +1,115 @@
+body {
+  font-family: 'Kaisei Decol', serif;
+  background: #fdfaf4 url('https://www.transparenttextures.com/patterns/beige-paper.png');
+  color: #4b2e2e;
+  margin: 0;
+}
+header {
+  background: #e0b084;
+  border-bottom: 5px double #5b3714;
+  padding: 1rem;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav li {
+  margin: 0 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: #4b1f0f;
+}
+main {
+  padding: 1rem;
+}
+#searchBox {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  max-width: 400px;
+  width: 90%;
+  border: 2px solid #a67c52;
+}
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.book-card {
+  background: #fff9f0;
+  border: 3px ridge #a67c52;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+}
+.book-card img {
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 0.4rem;
+}
+.book-card h3 {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
+.book-card a {
+  display: inline-block;
+  font-size: 0.75rem;
+  margin: 0.1rem;
+  text-decoration: none;
+  color: #a1401d;
+  font-weight: bold;
+}
+footer {
+  background: #e0b084;
+  text-align: center;
+  padding: 1rem;
+  border-top: 5px double #5b3714;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.pagination button {
+  margin: 0.25rem;
+  padding: 0.4rem 0.7rem;
+  background: #e0b084;
+  border: 1px solid #a67c52;
+  cursor: pointer;
+}
+.pagination button.active {
+  background-color: #a67c52;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .book-card {
+    font-size: 0.8rem;
+  }
+  .book-card img {
+    width: 80px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .book-card {
+    font-size: 0.75rem;
+  }
+  .book-card img {
+    width: 70px;
+    height: 100px;
+  }
+}
 /* style.css placeholder */
