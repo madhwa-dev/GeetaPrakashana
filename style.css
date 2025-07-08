@@ -74,7 +74,7 @@ main {
   margin: 0 auto;
 }
 
-.book-card {
+ /*.book-card {
   background: #fff9f0;
   border: 3px ridge #a67c52;
   border-radius: 10px;
@@ -85,6 +85,22 @@ main {
   width: 100%;
   max-width: 250px;
   box-sizing: border-box;
+}*/
+.book-card {
+  background: #fff9f0;
+  border: 3px ridge #a67c52;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 280px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.85rem;
 }
 
 .book-card:hover {
