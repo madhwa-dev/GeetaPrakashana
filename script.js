@@ -48,8 +48,9 @@ function displayBooks() {
     <div class="book-card">
       <img src="thumbs/${book.thumbnail}" alt="${book.title}" />
       <h3>${book.title}</h3>
-      <a href="books/${book.filename}" target="_blank">📄 View</a>
-      <a href="books/${book.filename}" download>⬇️ Download</a>
+      <div>
+      <a href="books/${book.filename}" target="_blank">📄 View</a>|<a href="books/${book.filename}" download>⬇️ Download</a>
+      </div>
     </div>
   `).join('');
 
