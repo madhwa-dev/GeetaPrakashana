@@ -21,7 +21,13 @@
   </header>
 
   <main>
-    <input type="text" id="searchBox" placeholder="Search books..." />
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; align-items: center; margin-top: 1rem;">
+      <select id="authorSelect" style="padding: 0.5rem; border: 2px solid #a67c52; border-radius: 5px;">
+        <!-- Populated dynamically by JS -->
+      </select>
+      <input type="text" id="searchBox" placeholder="Search books..." />
+    </div>
+
     <div class="book-grid" id="bookGrid"></div>
     <div class="pagination" id="pagination"></div>
   </main>
@@ -33,4 +39,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-<!-- index.html placeholder -->
