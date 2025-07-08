@@ -4,14 +4,14 @@
       "name": "Srinivasa S. Mathada",
       "books": [
         {
-          "title": "Book 1 - Bharatiya Samskriti",
-          "filename": "book_1.pdf",
-          "thumbnail": "thumb_1.jpg"
+          "title": "Bharatiya Samskritiyalli Govu",
+          "filename": "Bharatiya Samskritiyalli Govu - Srinivas S Mathad.pdf",
+          "thumbnail": "govu.png"
         },
         {
-          "title": "Book 2 - Govu Mahima",
-          "filename": "book_2.pdf",
-          "thumbnail": "thumb_2.jpg"
+          "title": "Sri Anubhashya Sarasangraha",
+          "filename": "Sri Anubhashya Sarasangraha - Srinivasa S. Mathada.pdf",
+          "thumbnail": "anubhashya.png"
         }
        
       ]
