@@ -1,115 +1,232 @@
+/* Global Styles */
 body {
   font-family: 'Kaisei Decol', serif;
   background: #fdfaf4 url('https://www.transparenttextures.com/patterns/beige-paper.png');
   color: #4b2e2e;
   margin: 0;
 }
+
 header {
   background: #e0b084;
   border-bottom: 5px double #5b3714;
   padding: 1rem;
   text-align: center;
 }
+
+.branding h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #4b1f0f;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
+
 nav li {
-  margin: 0 1rem;
+  margin: 0.5rem 1rem;
 }
+
 nav a {
   text-decoration: none;
   color: #4b1f0f;
+  font-weight: bold;
+  transition: color 0.3s;
 }
+
+nav a:hover {
+  color: #a1401d;
+}
+
 main {
   padding: 1rem;
 }
-#searchBox {
+
+#searchBox, #authorSelect {
   display: block;
   margin: 1rem auto;
   padding: 0.5rem;
   max-width: 400px;
   width: 90%;
   border: 2px solid #a67c52;
+  border-radius: 6px;
+  font-size: 1rem;
 }
+
 .book-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 1rem;
   padding: 1rem;
+  justify-items: center;
 }
+
 .book-card {
   background: #fff9f0;
   border: 3px ridge #a67c52;
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: 0.4rem 0.5rem;
   text-align: center;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  max-width: 180px;
+  box-sizing: border-box;
 }
+
+.book-card:hover {
+  transform: scale(1.02);
+}
+
 .book-card img {
   width: 100px;
   height: 140px;
   object-fit: cover;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
+  border-radius: 6px;
 }
+
 .book-card h3 {
-  font-size: 0.9rem;
-  margin: 0.2rem 0;
+  font-size: 0.88rem;
+  margin: 0.2rem 0 0.4rem;
+  min-height: 36px;
+  line-height: 1.2;
 }
+
 .book-card a {
   display: inline-block;
   font-size: 0.75rem;
-  margin: 0.1rem;
+  margin: 0.1rem 3px;
   text-decoration: none;
   color: #a1401d;
   font-weight: bold;
+  border: 1px solid #a67c52;
+  border-radius: 4px;
+  padding: 2px 6px;
+  background-color: #f9efe2;
 }
-footer {
-  background: #e0b084;
-  text-align: center;
-  padding: 1rem;
-  border-top: 5px double #5b3714;
+
+.book-card a:hover {
+  background-color: #edd9b8;
 }
+
+/* Pagination */
 .pagination {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 1rem;
+  gap: 0.4rem;
 }
+
 .pagination button {
-  margin: 0.25rem;
-  padding: 0.4rem 0.7rem;
+  padding: 0.4rem 0.8rem;
   background: #e0b084;
   border: 1px solid #a67c52;
   cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease;
 }
+
+.pagination button:hover {
+  background-color: #cfa77e;
+}
+
 .pagination button.active {
   background-color: #a67c52;
-  color: white;
+  color: #fff;
+}
+
+/* Author Page */
+.author-profile {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff9f0;
+  border: 2px solid #a67c52;
+  border-radius: 10px;
+}
+
+.author-photo {
+  float: right;
+  margin-left: 1rem;
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #a67c52;
+}
+
+/* Footer */
+footer {
+  background: #e0b084;
+  text-align: center;
+  padding: 1rem;
+  border-top: 5px double #5b3714;
+  font-size: 0.9rem;
+  color: #4b1f0f;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .book-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .book-card {
-    font-size: 0.8rem;
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .book-card img {
-    width: 80px;
-    height: 120px;
+
+  .branding h1 {
+    font-size: 1.4rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .book-card {
+    max-width: 160px;
   }
 }
 
 @media (max-width: 480px) {
   .book-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0.3rem 0;
+  }
+
   .book-card {
     font-size: 0.75rem;
+    padding: 0.4rem;
   }
+
   .book-card img {
     width: 70px;
     height: 100px;
   }
+
+  #searchBox, #authorSelect {
+    width: 90%;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
 }
-/* style.css placeholder */
