@@ -70,9 +70,9 @@ main {
   gap: 2rem;
   padding: 1rem;
   justify-items: center;
-  max-width: 1000px; /* or 960px for 5 cards x ~180px */
+  max-width: 1300px; /* or 960px for 5 cards x ~180px */
   margin: 0 auto;
-}
+} 
 
  .book-card {
   background: #fff9f0;
@@ -86,7 +86,6 @@ main {
   max-width: 250px;
   box-sizing: border-box;
 }
-
 
 .book-card:hover {
   transform: scale(1.02);
